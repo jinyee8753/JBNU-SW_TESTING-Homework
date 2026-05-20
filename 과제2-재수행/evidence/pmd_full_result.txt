@@ -1,0 +1,42 @@
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:18:	NoPackage:	All classes, interfaces, enums and annotations must belong to a named package
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:20:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:33:	ShortVariable:	Avoid variables with short names like s1
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:33:	MethodArgumentCouldBeFinal:	Parameter 's1' is not assigned and could be declared final
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:33:	ShortVariable:	Avoid variables with short names like s2
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:33:	MethodArgumentCouldBeFinal:	Parameter 's2' is not assigned and could be declared final
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:33:	ShortVariable:	Avoid variables with short names like s3
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:33:	MethodArgumentCouldBeFinal:	Parameter 's3' is not assigned and could be declared final
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:47:	LinguisticNaming:	Linguistics Antipattern - The setter 'setSideLengths' should not return any type except void linguistically
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:47:	ShortVariable:	Avoid variables with short names like s1
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:47:	MethodArgumentCouldBeFinal:	Parameter 's1' is not assigned and could be declared final
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:47:	ShortVariable:	Avoid variables with short names like s2
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:47:	MethodArgumentCouldBeFinal:	Parameter 's2' is not assigned and could be declared final
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:47:	ShortVariable:	Avoid variables with short names like s3
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:47:	MethodArgumentCouldBeFinal:	Parameter 's3' is not assigned and could be declared final
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:81:	LocalVariableCouldBeFinal:	Local variable 'semiPerimeter' could be declared final
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:82:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:105:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:110:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:115:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:120:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:136:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:138:	LocalVariableCouldBeFinal:	Local variable 'side1Squared' could be declared final
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:139:	LocalVariableCouldBeFinal:	Local variable 'side2Squared' could be declared final
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:140:	LocalVariableCouldBeFinal:	Local variable 'side3Squared' could be declared final
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:157:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:159:	ShortVariable:	Avoid variables with short names like s1
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:159:	LocalVariableCouldBeFinal:	Local variable 's1' could be declared final
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:160:	ShortVariable:	Avoid variables with short names like s2
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:160:	LocalVariableCouldBeFinal:	Local variable 's2' could be declared final
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:161:	ShortVariable:	Avoid variables with short names like s3
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:161:	LocalVariableCouldBeFinal:	Local variable 's3' could be declared final
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:166:	MethodArgumentCouldBeFinal:	Parameter 'value' is not assigned and could be declared final
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:176:	MethodArgumentCouldBeFinal:	Parameter 'args' is not assigned and could be declared final
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:178:	UnusedAssignment:	The initializer for variable 'triangle' is never used (overwritten on line 181)
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:186:	AvoidCatchingGenericException:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:188:	SystemPrintln:	Usage of System.out/err
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:192:	SystemPrintln:	Usage of System.out/err
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:193:	SystemPrintln:	Usage of System.out/err
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:194:	SystemPrintln:	Usage of System.out/err
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:195:	SystemPrintln:	Usage of System.out/err
+LoosePackageCoupling	-	No packages or classes specified

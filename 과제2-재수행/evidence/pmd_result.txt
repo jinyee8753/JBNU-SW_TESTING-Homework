@@ -1,0 +1,2 @@
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:18:	NoPackage:	All classes, interfaces, enums and annotations must belong to a named package
+C:\#mangsa-LLM-project\mangsa-wiki\학업\전북대학교\2026년-4학년-1학기\SW테스팅\레포트\과제2-재수행\src\Triangle.java:20:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.

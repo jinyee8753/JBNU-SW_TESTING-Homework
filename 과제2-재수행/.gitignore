@@ -1,0 +1,13 @@
+# 컴파일 산출물
+build/
+
+# 정적분석/커버리지 도구 바이너리 (대용량 JAR)
+tools/
+
+# Java 컴파일 산출물
+*.class
+*.exec
+
+# OS 파일
+.DS_Store
+Thumbs.db

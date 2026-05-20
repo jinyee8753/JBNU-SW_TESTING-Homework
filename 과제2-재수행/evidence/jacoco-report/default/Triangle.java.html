@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Triangle.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCo Coverage Report</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Triangle.java</span></div><h1>Triangle.java</h1><pre class="source lang-java linenums">/**
+ * Triangle. The main function takes 3 positive whole-number lengths
+ * to be typed in as command line arguments. The program responds
+ * with a description of the triangle, as follows:
+ *
+ * &lt;ul&gt;
+ *  &lt;li&gt;&lt;b&gt;equilateral&lt;/b&gt; - if all three sides have equal length
+ *  &lt;li&gt;&lt;b&gt;isosceles&lt;/b&gt; - if two sides have equal length
+ *  &lt;li&gt;&lt;b&gt;right-angled&lt;/b&gt; - if one angle is a right angle
+ *  &lt;li&gt;&lt;b&gt;scalene&lt;/b&gt; - all sides different lengths, no right angles
+ *  &lt;li&gt;&lt;b&gt;impossible&lt;/b&gt; - if the given side lengths do not form a triangle
+ * &lt;/ul&gt;
+ * Area and perimeter of the triangle are calculated, too.
+ *
+ * @author Mikko Rusama, SoberIT
+ * @version 26.8.2004
+ */
+public class Triangle
+{
+	private int side1;
+	private int side2;
+	private int side3;
+	private static final String P_EQUILATERAL = &quot;equilateral&quot;;
+	private static final String P_ISOSCELES   = &quot;isosceles&quot;;
+	private static final String P_RIGHTANGLED = &quot;right-angled&quot;;
+	private static final String P_SCALENE     = &quot;scalene&quot;;
+	private static final String P_IMPOSSIBLE  = &quot;impossible&quot;;
+
+	/**
+	 * Constuctor (without error checking)
+	 * @param s1 length of the side1 as an integer.
+	 * @param s2 length of the side2 as an integer.
+	 * @param s3 length of the side3 as an integer.
+	 */
+	public Triangle(int s1, int s2, int s3)
+<span class="fc" id="L36">	{</span>
+<span class="fc" id="L37">		side1 = s1;</span>
+<span class="fc" id="L38">		side2 = s2;</span>
+<span class="fc" id="L39">		side3 = s3;</span>
+<span class="fc" id="L40">	}</span>
+
+	/**
+	 * Sets the lenghts of the sides of this triangle.
+	 * @param s1 length of the side1
+	 * @param s2 length of the side2
+	 * @param s3 length of the side3
+	 * @return a reference to this triangle.
+	 */
+	public Triangle setSideLengths(int s1, int s2, int s3)
+	{
+<span class="fc" id="L51">		side1 = s1;</span>
+<span class="fc" id="L52">		side2 = s2;</span>
+<span class="fc" id="L53">		side3 = s3;</span>
+<span class="fc" id="L54">		return this;</span>
+	}
+
+	/**
+	 * Gets the side lenghts.
+	 * @return a comma separated list of side lengths
+	 */
+	public String getSideLengths()
+	{
+<span class="fc" id="L63">		return side1 + &quot;,&quot; + side2 + &quot;,&quot; + side3;</span>
+	}
+
+	/**
+	 * Gets the perimeter of the triangle.
+	 * Returns the sum of all three sides regardless of whether the triangle is valid.
+	 * @return the perimeter (side1 + side2 + side3).
+	 */
+	public int getPerimeter()
+	{
+<span class="fc" id="L73">		return side1 + side2 + side3;</span>
+	}
+
+	/**
+	 * Gets the area of the triangle.
+	 * @return area of the triangle, -1.0 if triangle is impossible.
+	 */
+	public double getArea()
+	{
+<span class="fc bfc" id="L82" title="All 2 branches covered.">		if (!isImpossible())</span>
+		{
+<span class="fc" id="L84">			double semiPerimeter = getPerimeter() / 2.0;</span>
+<span class="fc" id="L85">			return Math.sqrt(semiPerimeter</span>
+			* (semiPerimeter - side1)
+			* (semiPerimeter - side2)
+			* (semiPerimeter - side3));
+		}
+<span class="fc" id="L90">		return -1;</span>
+	}
+
+	/**
+	 * Classifies the triangle. Possible types, returned as a string, are:
+	 * &lt;ul&gt;
+	 *  &lt;li&gt;equilateral - if all three sides have equal length
+	 *  &lt;li&gt;isosceles - if two sides have equal length
+	 *  &lt;li&gt;right-angled - if one angle is a right angle
+	 *  &lt;li&gt;scalene - all sides different lengths, no right angles
+	 *  &lt;li&gt;impossible - if the lengths can't form a triangle
+	 * &lt;/ul&gt;
+	 * @return type of the triangle as a string.
+	 */
+	public String classify()
+	{
+<span class="fc bfc" id="L106" title="All 2 branches covered.">		if (isImpossible())</span>
+		{
+<span class="fc" id="L108">			return P_IMPOSSIBLE;</span>
+		}
+
+<span class="fc bfc" id="L111" title="All 4 branches covered.">		if (side1 == side2 &amp;&amp; side2 == side3)</span>
+		{
+<span class="fc" id="L113">			return P_EQUILATERAL;</span>
+		}
+
+<span class="fc bfc" id="L116" title="All 6 branches covered.">		if (side1 == side2 || side1 == side3 || side2 == side3)</span>
+		{
+<span class="fc" id="L118">			return P_ISOSCELES;</span>
+		}
+
+<span class="fc bfc" id="L121" title="All 2 branches covered.">		if (isRightAngled())</span>
+		{
+<span class="fc" id="L123">			return P_RIGHTANGLED;</span>
+		}
+
+<span class="fc" id="L126">		return P_SCALENE;</span>
+	}
+
+	/**
+	 * Checks if the triangle is right-angled. Note: right-angled triangle may
+	 * also be isosceles.
+	 * @return true if one angle is a right angle, otherwise false.
+	 */
+	public boolean isRightAngled()
+	{
+<span class="fc bfc" id="L136" title="All 2 branches covered.">		if (isImpossible())</span>
+		{
+<span class="fc" id="L138">			return false;</span>
+		}
+<span class="fc" id="L140">		long side1Squared = square(side1);</span>
+<span class="fc" id="L141">		long side2Squared = square(side2);</span>
+<span class="fc" id="L142">		long side3Squared = square(side3);</span>
+
+<span class="fc bfc" id="L144" title="All 6 branches covered.">		return side1Squared + side2Squared == side3Squared</span>
+			|| side1Squared + side3Squared == side2Squared
+			|| side2Squared + side3Squared == side1Squared;
+	}
+
+	/**
+	 * Checks whether the given side lengths form a
+	 * valid triangle.
+	 * @return true if the given side lenghts do not form a triangle.
+	 */
+	public boolean isImpossible()
+	{
+<span class="fc bfc" id="L156" title="All 6 branches covered.">		if (side1 &lt;= 0 || side2 &lt;= 0 || side3 &lt;= 0)</span>
+		{
+<span class="fc" id="L158">			return true;</span>
+		}
+<span class="fc" id="L160">		long s1 = side1;</span>
+<span class="fc" id="L161">		long s2 = side2;</span>
+<span class="fc" id="L162">		long s3 = side3;</span>
+
+<span class="pc bpc" id="L164" title="2 of 6 branches missed.">		return s1 + s2 &lt;= s3 || s1 + s3 &lt;= s2 || s2 + s3 &lt;= s1;</span>
+	}
+
+	private long square(int value)
+	{
+<span class="fc" id="L169">		return (long) value * value;</span>
+	}
+
+	/**
+	 * Usage: java Quadrangle &amp;lt;side1:int&amp;gt; &amp;lt;side2:int&amp;gt; &amp;lt;side3:int&amp;gt;
+	 * &lt;p&gt;Main method is only used for testing purposes, no unit tests need to
+	 * be written for this method.&lt;/p&gt;
+	 */
+	public static void main(String[] args)
+	{
+		Triangle triangle;
+		try
+		{
+<span class="nc" id="L182">			triangle = new Triangle(</span>
+<span class="nc" id="L183">					Integer.parseInt(args[0]),</span>
+<span class="nc" id="L184">					Integer.parseInt(args[1]),</span>
+<span class="nc" id="L185">					Integer.parseInt(args[2]));</span>
+		}
+<span class="nc" id="L187">		catch (NumberFormatException | ArrayIndexOutOfBoundsException e)</span>
+		{
+<span class="nc" id="L189">			System.out.println(</span>
+				&quot;Usage: java Quadrangle &lt;side1:int&gt; &lt;side2:int&gt; &lt;side3:int&gt;&quot;);
+<span class="nc" id="L191">			return;</span>
+<span class="nc" id="L192">		}</span>
+<span class="nc" id="L193">		System.out.println(&quot;Type: &quot; + triangle.classify());</span>
+<span class="nc" id="L194">		System.out.println(&quot;Triangle sides: &quot; + triangle.getSideLengths());</span>
+<span class="nc" id="L195">		System.out.println(&quot;Area: &quot; + triangle.getArea());</span>
+<span class="nc" id="L196">		System.out.println(&quot;Perimeter: &quot; + triangle.getPerimeter());</span>
+<span class="nc" id="L197">	}</span>
+
+} // End of class.
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
