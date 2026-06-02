@@ -2,30 +2,39 @@
 
 ## 1. 사용한 AI agent 또는 도구
 
-사용한 도구명:
-- Claude Code (Claude Opus 4.8) — 오케스트레이터, 코드 구현, 보고서 작성
-- Hermes (GPT-5.5) — cross-family 설계 리뷰 및 최종 검수
-- Codex (GPT-5.5) — 구현 코드 리뷰
-- Claude Sonnet 4.6 — 보조 문서 작성
-- Gradle 8.10.2 — 빌드 도구 (Gradle Wrapper)
-- JUnit 5 (junit-jupiter 5.11.3) — 테스트 프레임워크
-- JUnit Platform Suite — `@Suite` 기반 통합 테스트 집계
-- Mockito 5.18.0 — Mock 객체 생성 (단위시험 격리)
-- GitHub Actions — CI (push/PR 시 자동 빌드·테스트)
-- Eclipse Temurin OpenJDK 17 — Java 런타임
+### 사용한 도구
 
-사용 목적:
-- 기존 `classify()`에 더해 삼각형의 복수 속성을 동시에 반환하는 `getTypeFlags()` 추가
-- Mockito mock을 활용한 단위시험 격리 (강의 11주차 Test Double)
-- `@Suite` 기반 단위→통합 단계 분리 (강의 12·13주차 Integration Testing)
-- GitHub Actions로 CI 파이프라인 구축, push/PR 시 build success 확인 (강의 13주차 CI)
+| 도구 | 버전 | 역할 |
+|------|------|------|
+| Claude Code (Claude Opus 4.8) | — | 오케스트레이터, 코드 구현, 보고서 작성 |
+| Hermes | GPT-5.5 | cross-family 설계 리뷰 및 최종 검수 |
+| Codex | GPT-5.5 | 구현 코드 리뷰 |
+| Claude Sonnet | 4.6 | 보조 문서 작성 |
+| Gradle | 8.10.2 | 빌드 도구 (Gradle Wrapper) |
+| JUnit 5 | junit-jupiter 5.11.3 | 테스트 프레임워크 |
+| JUnit Platform Suite | — | `@Suite` 기반 통합 테스트 집계 |
+| Mockito | 5.18.0 | Mock 객체 생성 (단위시험 격리) |
+| GitHub Actions | — | CI (push/PR 시 자동 빌드·테스트) |
+| Eclipse Temurin OpenJDK | 17 | Java 런타임 |
 
-AI agent에게 부여한 주요 역할:
-- 지시사항 및 강의자료(11/12/13주차) 분석
-- `getTypeFlags()` 설계 및 mocking 구조 설계
-- 단위·통합 테스트 작성
-- Gradle 빌드 및 GitHub Actions workflow 구성
-- 다중 에이전트 교차 검수 (cross-family 설계 검수, 구현 리뷰, 엄격 평가)
+### 사용 목적
+
+| 목적 | 강의 연계 |
+|------|-----------|
+| 기존 `classify()`에 더해 복수 속성을 동시에 반환하는 `getTypeFlags()` 추가 | 13주차 |
+| Mockito mock을 활용한 단위시험 격리 | 11주차 Test Double |
+| `@Suite` 기반 단위→통합 단계 분리 | 12·13주차 Integration Testing |
+| GitHub Actions로 CI 파이프라인 구축, push/PR 시 build success 확인 | 13주차 CI |
+
+### AI agent 역할 분담
+
+| Agent | 부여한 역할 |
+|-------|-------------|
+| Claude Opus 4.8 | 지시사항·강의자료(11/12/13주차) 분석, `getTypeFlags()`·mocking 구조 설계, 단위·통합 테스트 및 Gradle/CI 구현, 보고서 작성 |
+| Hermes (GPT-5.5) | cross-family 설계 검수 (인터페이스 주입·반환형·통합 구조·대면검사 방어력) |
+| Codex (GPT-5.5) | 구현 코드 리뷰 (Mockito 사용·빌드 설정·엣지케이스) |
+| Claude Sonnet 4.6 | README·AI 활용 기록 문서 작성 |
+| 엄격 평가 에이전트 | docx 요구·강의 기준 대비 최종 감사 |
 
 ## 2. 개발 대상 및 과제2-재수행과의 관계
 
@@ -302,10 +311,13 @@ jobs:
 ## 8. 최종 테스트 결과
 
 테스트 실행 환경:
-- Java: Eclipse Temurin OpenJDK 17
-- 빌드: Gradle 8.10.2 (Gradle Wrapper)
-- 프레임워크: JUnit 5 (junit-jupiter 5.11.3), JUnit Platform Suite
-- Mock: Mockito 5.18.0
+
+| 항목 | 값 |
+|------|-----|
+| Java | Eclipse Temurin OpenJDK 17 |
+| 빌드 | Gradle 8.10.2 (Gradle Wrapper) |
+| 프레임워크 | JUnit 5 (junit-jupiter 5.11.3), JUnit Platform Suite |
+| Mock | Mockito 5.18.0 |
 
 테스트 구성:
 
@@ -327,13 +339,10 @@ jobs:
 
 ## 9. 남은 한계 또는 개선 가능성
 
-설계 관련:
-- 본 과제의 단위는 Triangle과 RightAngleChecker 두 개뿐이므로, 강의 Calculator 예시의 3단계 통합을 2단계로 매핑했다. 더 많은 의존성이 있었다면 mock을 점진적으로 교체하는 단계가 늘어났을 것이다.
-- `getTypeFlags()`가 직각 판정만 의존성으로 분리했다. 모양 판정(equilateral/isosceles/scalene)도 의존성으로 분리하면 mocking 범위가 넓어지지만, 단순 정수 비교를 인터페이스로 추상화하는 것은 과설계로 판단했다.
-
-mocking 관련:
-- 직각이등변삼각형은 정수 변으로 존재하지 않으므로(빗변이 무리수), `{ISOSCELES, RIGHT_ANGLED}` 조합은 mock으로만 단위 검증했다. 이는 mocking이 실제로는 불가능한 입력 조합까지 flag 조합 로직을 격리 검증할 수 있게 해준다는 장점을 보여준다.
-
-CI 관련:
-- 본 과제는 단일 모듈이라 빌드가 빠르지만, 대규모 프로젝트에서는 캐싱·병렬화·테스트 분할이 추가로 필요하다.
-- 커버리지 게이트(JaCoCo)나 정적분석을 CI에 추가하면 품질 게이트를 자동화할 수 있다 (과제2-재수행에서 다룬 도구들과 연계 가능).
+| 범주 | 한계 / 개선 가능성 |
+|------|--------------------|
+| 설계 | 본 과제의 단위는 `Triangle`과 `RightAngleChecker` 둘뿐이라, 강의 Calculator 예시의 3단계 통합을 2단계로 매핑했다. 의존성이 더 많았다면 mock을 점진적으로 교체하는 단계가 늘어났을 것이다. |
+| 설계 | `getTypeFlags()`는 직각 판정만 의존성으로 분리했다. 모양 판정(equilateral/isosceles/scalene)까지 분리하면 mocking 범위가 넓어지지만, 단순 정수 비교를 인터페이스로 추상화하는 것은 과설계로 판단했다. |
+| Mocking | 직각이등변삼각형은 정수 변으로 존재하지 않으므로(빗변이 무리수), `{ISOSCELES, RIGHT_ANGLED}` 조합은 mock으로만 단위 검증했다. 이는 mocking이 실제로는 불가능한 입력 조합까지 flag 조합 로직을 격리 검증할 수 있다는 장점을 보여준다. |
+| CI | 단일 모듈이라 빌드가 빠르지만, 대규모 프로젝트에서는 캐싱·병렬화·테스트 분할이 추가로 필요하다. |
+| CI | 커버리지 게이트(JaCoCo)나 정적분석을 CI에 추가하면 품질 게이트를 자동화할 수 있다 (과제2-재수행 도구와 연계 가능). |
