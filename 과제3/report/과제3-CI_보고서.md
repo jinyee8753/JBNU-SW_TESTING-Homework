@@ -4,18 +4,18 @@
 
 ### 사용한 도구
 
-| 도구 | 버전 | 역할 |
-|------|------|------|
-| Claude Code (Claude Opus 4.8) | — | 오케스트레이터, 코드 구현, 보고서 작성 |
-| Hermes | GPT-5.5 | cross-family 설계 리뷰 및 최종 검수 |
-| Codex | GPT-5.5 | 구현 코드 리뷰 |
-| Claude Sonnet | 4.6 | 보조 문서 작성 |
-| Gradle | 8.10.2 | 빌드 도구 (Gradle Wrapper) |
-| JUnit 5 | junit-jupiter 5.11.3 | 테스트 프레임워크 |
-| JUnit Platform Suite | — | `@Suite` 기반 통합 테스트 집계 |
-| Mockito | 5.18.0 | Mock 객체 생성 (단위시험 격리) |
-| GitHub Actions | — | CI (push/PR 시 자동 빌드·테스트) |
-| Eclipse Temurin OpenJDK | 17 | Java 런타임 |
+| 도구                      | 버전                   | 역할                         |
+| ----------------------- | -------------------- | -------------------------- |
+| Claude Code             | Opus-4.8             | 오케스트레이터, 코드 구현, 보고서 작성     |
+| Hermes                  | GPT-5.5              | cross-family 설계 리뷰 및 최종 검수 |
+| Codex                   | GPT-5.5              | 구현 코드 리뷰                   |
+| Claude Code             | Sonnet-4.6           | 보조 문서 작성                   |
+| Gradle                  | 8.10.2               | 빌드 도구 (Gradle Wrapper)     |
+| JUnit 5                 | junit-jupiter 5.11.3 | 테스트 프레임워크                  |
+| JUnit Platform Suite    | —                    | `@Suite` 기반 통합 테스트 집계      |
+| Mockito                 | 5.18.0               | Mock 객체 생성 (단위시험 격리)       |
+| GitHub Actions          | —                    | CI (push/PR 시 자동 빌드·테스트)   |
+| Eclipse Temurin OpenJDK | 17                   | Java 런타임                   |
 
 ### 사용 목적
 
