@@ -4,10 +4,10 @@
 
 | Agent         | 모델                | 역할                                 |
 | ------------- | ----------------- | ---------------------------------- |
-| Claude Opus   | Claude Opus 4.8   | 오케스트레이터, 코드 구현, 메인 보고서 작성          |
+| Claude Code   | Opus 4.8          | 오케스트레이터, 코드 구현, 메인 보고서 작성          |
 | Hermes        | GPT-5.5-medium    | cross-family 설계 리뷰, 최종 검수          |
 | Codex         | GPT-5.5-low       | 구현 리뷰                              |
-| Claude Sonnet | Claude Sonnet 4.6 | 문서 작성 (README, ai_interaction_log) |
+| Claude Code   | Sonnet 4.6        | 문서 작성 (README, ai_interaction_log) |
 
 ## 2. 역할 분담
 

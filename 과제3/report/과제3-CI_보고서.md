@@ -30,10 +30,10 @@
 
 | Agent | 부여한 역할 |
 |-------|-------------|
-| Claude Opus 4.8 | 지시사항·강의자료(11/12/13주차) 분석, `getTypeFlags()`·mocking 구조 설계, 단위·통합 테스트 및 Gradle/CI 구현, 보고서 작성 |
+| Claude Code (Opus 4.8) | 지시사항·강의자료(11/12/13주차) 분석, `getTypeFlags()`·mocking 구조 설계, 단위·통합 테스트 및 Gradle/CI 구현, 보고서 작성 |
 | Hermes (GPT-5.5) | cross-family 설계 검수 (인터페이스 주입·반환형·통합 구조·대면검사 방어력) |
 | Codex (GPT-5.5) | 구현 코드 리뷰 (Mockito 사용·빌드 설정·엣지케이스) |
-| Claude Sonnet 4.6 | README·AI 활용 기록 문서 작성 |
+| Claude Code (Sonnet 4.6) | README·AI 활용 기록 문서 작성 |
 | 엄격 평가 에이전트 | 지시사항 요구·강의 기준 대비 최종 감사 |
 
 ## 2. 개발 대상 및 과제2-재수행과의 관계
