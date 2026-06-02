@@ -1,0 +1,193 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.10.2/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :clean
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :jar
+> Task :startScripts
+> Task :distTar
+> Task :distZip
+> Task :assemble
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+> Task :test
+
+TriangleIntegrationTest > JUnit Jupiter > FirstStepOfIntegrationTest > getTypeFlagsWithMockedChecker(int, int, int, String) > [1] 3, 3, 3, EQUILATERAL PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > FirstStepOfIntegrationTest > getTypeFlagsWithMockedChecker(int, int, int, String) > [2] 3, 3, 4, ISOSCELES PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > FirstStepOfIntegrationTest > getTypeFlagsWithMockedChecker(int, int, int, String) > [3] 3, 4, 5, SCALENE|RIGHT_ANGLED PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > FirstStepOfIntegrationTest > getTypeFlagsWithMockedChecker(int, int, int, String) > [4] 4, 5, 6, SCALENE PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > FirstStepOfIntegrationTest > getTypeFlagsWithMockedChecker(int, int, int, String) > [5] 5, 3, 4, SCALENE|RIGHT_ANGLED PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > FirstStepOfIntegrationTest > getTypeFlagsWithMockedChecker(int, int, int, String) > [6] 1, 2, 2, ISOSCELES PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > FirstStepOfIntegrationTest > getTypeFlagsWithMockedChecker(int, int, int, String) > [7] 1, 2, 3, IMPOSSIBLE PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > FirstStepOfIntegrationTest > getTypeFlagsWithMockedChecker(int, int, int, String) > [8] 0, 1, 1, IMPOSSIBLE PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > FirstStepOfIntegrationTest > getTypeFlagsWithMockedChecker(int, int, int, String) > [9] -1, 2, 2, IMPOSSIBLE PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsWithRealChecker(int, int, int, String) > [1] 3, 3, 3, EQUILATERAL PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsWithRealChecker(int, int, int, String) > [2] 3, 3, 4, ISOSCELES PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsWithRealChecker(int, int, int, String) > [3] 3, 4, 5, SCALENE|RIGHT_ANGLED PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsWithRealChecker(int, int, int, String) > [4] 4, 5, 6, SCALENE PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsWithRealChecker(int, int, int, String) > [5] 5, 3, 4, SCALENE|RIGHT_ANGLED PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsWithRealChecker(int, int, int, String) > [6] 1, 2, 2, ISOSCELES PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsWithRealChecker(int, int, int, String) > [7] 1, 2, 3, IMPOSSIBLE PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsWithRealChecker(int, int, int, String) > [8] 0, 1, 1, IMPOSSIBLE PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsWithRealChecker(int, int, int, String) > [9] -1, 2, 2, IMPOSSIBLE PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsWithRealChecker(int, int, int, String) > [10] 20, 21, 29, SCALENE|RIGHT_ANGLED PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsWithRealChecker(int, int, int, String) > [11] 30000, 40000, 50000, SCALENE|RIGHT_ANGLED PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsWithRealChecker(int, int, int, String) > [12] 9, 10, 11, SCALENE PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsIsConsistentWithClassifyAndIsRightAngled(int, int, int) > [1] 3, 4, 5 PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsIsConsistentWithClassifyAndIsRightAngled(int, int, int) > [2] 3, 3, 3 PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsIsConsistentWithClassifyAndIsRightAngled(int, int, int) > [3] 3, 3, 4 PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsIsConsistentWithClassifyAndIsRightAngled(int, int, int) > [4] 4, 5, 6 PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsIsConsistentWithClassifyAndIsRightAngled(int, int, int) > [5] 1, 2, 3 PASSED
+
+TriangleIntegrationTest > JUnit Jupiter > SecondStepOfIntegrationTest > getTypeFlagsIsConsistentWithClassifyAndIsRightAngled(int, int, int) > [6] 20, 21, 29 PASSED
+
+RealRightAngleCheckerTest > isRightAngledDetectsPythagoreanTriplesRegardlessOfOrder(int, int, int, boolean) > [1] 3, 4, 5, true PASSED
+
+RealRightAngleCheckerTest > isRightAngledDetectsPythagoreanTriplesRegardlessOfOrder(int, int, int, boolean) > [2] 5, 3, 4, true PASSED
+
+RealRightAngleCheckerTest > isRightAngledDetectsPythagoreanTriplesRegardlessOfOrder(int, int, int, boolean) > [3] 5, 4, 3, true PASSED
+
+RealRightAngleCheckerTest > isRightAngledDetectsPythagoreanTriplesRegardlessOfOrder(int, int, int, boolean) > [4] 20, 21, 29, true PASSED
+
+RealRightAngleCheckerTest > isRightAngledDetectsPythagoreanTriplesRegardlessOfOrder(int, int, int, boolean) > [5] 30000, 40000, 50000, true PASSED
+
+RealRightAngleCheckerTest > isRightAngledDetectsPythagoreanTriplesRegardlessOfOrder(int, int, int, boolean) > [6] 3, 3, 3, false PASSED
+
+RealRightAngleCheckerTest > isRightAngledDetectsPythagoreanTriplesRegardlessOfOrder(int, int, int, boolean) > [7] 4, 5, 6, false PASSED
+
+RealRightAngleCheckerTest > isRightAngledDetectsPythagoreanTriplesRegardlessOfOrder(int, int, int, boolean) > [8] 1, 2, 2, false PASSED
+
+RealRightAngleCheckerTest > isRightAngledDetectsPythagoreanTriplesRegardlessOfOrder(int, int, int, boolean) > [9] 9, 10, 11, false PASSED
+
+TriangleGetTypeFlagsUnitTest > getTypeFlagsReturnsEquilateralIndependentlyOfMockedChecker() PASSED
+
+TriangleGetTypeFlagsUnitTest > getTypeFlagsReturnsIsoscelesAtJustValidBoundary() PASSED
+
+TriangleGetTypeFlagsUnitTest > getTypeFlagsCombinesIsoscelesAndRightAngledWhenMockSaysRight() PASSED
+
+TriangleGetTypeFlagsUnitTest > getTypeFlagsReturnsImpossibleAndNeverCallsCheckerForNegativeSide() PASSED
+
+TriangleGetTypeFlagsUnitTest > getTypeFlagsReturnsScaleneAndRightAngledWhenMockSaysRight() PASSED
+
+TriangleGetTypeFlagsUnitTest > getTypeFlagsReturnsImpossibleAndNeverCallsCheckerForZeroSide() PASSED
+
+TriangleGetTypeFlagsUnitTest > getTypeFlagsReturnsImpossibleAndNeverCallsCheckerForTriangleInequality() PASSED
+
+TriangleGetTypeFlagsUnitTest > getTypeFlagsReturnsScaleneOnlyWhenMockSaysNotRight() PASSED
+
+TriangleGetTypeFlagsUnitTest > getTypeFlagsReturnsIsoscelesForExactlyTwoEqualSides() PASSED
+
+TriangleTest > inputOrderDoesNotChangeClassification(int, int, int, String) > [1] 5, 3, 5, isosceles PASSED
+
+TriangleTest > inputOrderDoesNotChangeClassification(int, int, int, String) > [2] 3, 5, 5, isosceles PASSED
+
+TriangleTest > inputOrderDoesNotChangeClassification(int, int, int, String) > [3] 5, 3, 4, right-angled PASSED
+
+TriangleTest > inputOrderDoesNotChangeClassification(int, int, int, String) > [4] 4, 5, 3, right-angled PASSED
+
+TriangleTest > inputOrderDoesNotChangeClassification(int, int, int, String) > [5] 2, 1, 10, impossible PASSED
+
+TriangleTest > setSideLengthsUpdatesClassification() PASSED
+
+TriangleTest > getPerimeterForImpossibleTriangleReturnsSum() PASSED
+
+TriangleTest > classifyScaleneTriangle(int, int, int) > [1] 4, 5, 6 PASSED
+
+TriangleTest > classifyScaleneTriangle(int, int, int) > [2] 9, 10, 11 PASSED
+
+TriangleTest > classifyIsoscelesTriangleForAnyEqualSidePair(int, int, int) > [1] 3, 3, 5 PASSED
+
+TriangleTest > classifyIsoscelesTriangleForAnyEqualSidePair(int, int, int) > [2] 5, 3, 5 PASSED
+
+TriangleTest > classifyIsoscelesTriangleForAnyEqualSidePair(int, int, int) > [3] 3, 5, 5 PASSED
+
+TriangleTest > classifyIsoscelesTriangleForAnyEqualSidePair(int, int, int) > [4] 1000000, 1000000, 1999999 PASSED
+
+TriangleTest > isRightAngledReturnsFalseForImpossibleTriangle() PASSED
+
+TriangleTest > possibleTriangleIsNotImpossible(int, int, int) > [1] 3, 4, 5 PASSED
+
+TriangleTest > possibleTriangleIsNotImpossible(int, int, int) > [2] 4, 5, 6 PASSED
+
+TriangleTest > possibleTriangleIsNotImpossible(int, int, int) > [3] 1000000, 1000000, 1999999 PASSED
+
+TriangleTest > triangleInequalityBoundaryIsImpossible() PASSED
+
+TriangleTest > getPerimeterReturnsSum() PASSED
+
+TriangleTest > classifyImpossibleTriangle(int, int, int) > [1] 0, 3, 4 PASSED
+
+TriangleTest > classifyImpossibleTriangle(int, int, int) > [2] 3, 0, 4 PASSED
+
+TriangleTest > classifyImpossibleTriangle(int, int, int) > [3] 3, 4, 0 PASSED
+
+TriangleTest > classifyImpossibleTriangle(int, int, int) > [4] -1, 3, 4 PASSED
+
+TriangleTest > classifyImpossibleTriangle(int, int, int) > [5] 1, 2, 3 PASSED
+
+TriangleTest > classifyImpossibleTriangle(int, int, int) > [6] 1, 2, 10 PASSED
+
+TriangleTest > classifyEquilateralTriangle() PASSED
+
+TriangleTest > impossibleIncludesNonPositiveAndTriangleInequalityCases(int, int, int) > [1] 0, 3, 4 PASSED
+
+TriangleTest > impossibleIncludesNonPositiveAndTriangleInequalityCases(int, int, int) > [2] 3, 0, 4 PASSED
+
+TriangleTest > impossibleIncludesNonPositiveAndTriangleInequalityCases(int, int, int) > [3] 3, 4, 0 PASSED
+
+TriangleTest > impossibleIncludesNonPositiveAndTriangleInequalityCases(int, int, int) > [4] -1, 3, 4 PASSED
+
+TriangleTest > impossibleIncludesNonPositiveAndTriangleInequalityCases(int, int, int) > [5] 1, 2, 3 PASSED
+
+TriangleTest > impossibleIncludesNonPositiveAndTriangleInequalityCases(int, int, int) > [6] 1, 2, 10 PASSED
+
+TriangleTest > classifyRightAngledTriangleRegardlessOfInputOrder(int, int, int) > [1] 3, 4, 5 PASSED
+
+TriangleTest > classifyRightAngledTriangleRegardlessOfInputOrder(int, int, int) > [2] 5, 3, 4 PASSED
+
+TriangleTest > classifyRightAngledTriangleRegardlessOfInputOrder(int, int, int) > [3] 20, 21, 29 PASSED
+
+TriangleTest > getAreaReturnsMinusOneForImpossibleTriangle() PASSED
+
+TriangleTest > setSideLengthsReturnsSameInstance() PASSED
+
+TriangleTest > getSideLengthsReturnsCommaSeparatedValues() PASSED
+
+TriangleTest > getSideLengthsReflectsSetSideLengths() PASSED
+
+TriangleTest > getAreaReturnsExpectedValueForThreeFourFiveTriangle() PASSED
+
+> Task :check
+> Task :build
+
+BUILD SUCCESSFUL in 10s
+8 actionable tasks: 8 executed

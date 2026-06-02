@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TriangleTest" tests="40" skipped="0" failures="0" errors="0" timestamp="2026-06-02T20:05:43" hostname="localhost" time="0.07">
+  <properties/>
+  <testcase name="[1] 5, 3, 5, isosceles" classname="TriangleTest" time="0.0"/>
+  <testcase name="[2] 3, 5, 5, isosceles" classname="TriangleTest" time="0.0"/>
+  <testcase name="[3] 5, 3, 4, right-angled" classname="TriangleTest" time="0.001"/>
+  <testcase name="[4] 4, 5, 3, right-angled" classname="TriangleTest" time="0.001"/>
+  <testcase name="[5] 2, 1, 10, impossible" classname="TriangleTest" time="0.001"/>
+  <testcase name="setSideLengthsUpdatesClassification()" classname="TriangleTest" time="0.0"/>
+  <testcase name="getPerimeterForImpossibleTriangleReturnsSum()" classname="TriangleTest" time="0.003"/>
+  <testcase name="[1] 4, 5, 6" classname="TriangleTest" time="0.001"/>
+  <testcase name="[2] 9, 10, 11" classname="TriangleTest" time="0.001"/>
+  <testcase name="[1] 3, 3, 5" classname="TriangleTest" time="0.001"/>
+  <testcase name="[2] 5, 3, 5" classname="TriangleTest" time="0.0"/>
+  <testcase name="[3] 3, 5, 5" classname="TriangleTest" time="0.0"/>
+  <testcase name="[4] 1000000, 1000000, 1999999" classname="TriangleTest" time="0.001"/>
+  <testcase name="isRightAngledReturnsFalseForImpossibleTriangle()" classname="TriangleTest" time="0.001"/>
+  <testcase name="[1] 3, 4, 5" classname="TriangleTest" time="0.0"/>
+  <testcase name="[2] 4, 5, 6" classname="TriangleTest" time="0.0"/>
+  <testcase name="[3] 1000000, 1000000, 1999999" classname="TriangleTest" time="0.001"/>
+  <testcase name="triangleInequalityBoundaryIsImpossible()" classname="TriangleTest" time="0.0"/>
+  <testcase name="getPerimeterReturnsSum()" classname="TriangleTest" time="0.0"/>
+  <testcase name="[1] 0, 3, 4" classname="TriangleTest" time="0.001"/>
+  <testcase name="[2] 3, 0, 4" classname="TriangleTest" time="0.0"/>
+  <testcase name="[3] 3, 4, 0" classname="TriangleTest" time="0.001"/>
+  <testcase name="[4] -1, 3, 4" classname="TriangleTest" time="0.001"/>
+  <testcase name="[5] 1, 2, 3" classname="TriangleTest" time="0.0"/>
+  <testcase name="[6] 1, 2, 10" classname="TriangleTest" time="0.0"/>
+  <testcase name="classifyEquilateralTriangle()" classname="TriangleTest" time="0.0"/>
+  <testcase name="[1] 0, 3, 4" classname="TriangleTest" time="0.0"/>
+  <testcase name="[2] 3, 0, 4" classname="TriangleTest" time="0.0"/>
+  <testcase name="[3] 3, 4, 0" classname="TriangleTest" time="0.001"/>
+  <testcase name="[4] -1, 3, 4" classname="TriangleTest" time="0.0"/>
+  <testcase name="[5] 1, 2, 3" classname="TriangleTest" time="0.001"/>
+  <testcase name="[6] 1, 2, 10" classname="TriangleTest" time="0.0"/>
+  <testcase name="[1] 3, 4, 5" classname="TriangleTest" time="0.0"/>
+  <testcase name="[2] 5, 3, 4" classname="TriangleTest" time="0.001"/>
+  <testcase name="[3] 20, 21, 29" classname="TriangleTest" time="0.0"/>
+  <testcase name="getAreaReturnsMinusOneForImpossibleTriangle()" classname="TriangleTest" time="0.001"/>
+  <testcase name="setSideLengthsReturnsSameInstance()" classname="TriangleTest" time="0.0"/>
+  <testcase name="getSideLengthsReturnsCommaSeparatedValues()" classname="TriangleTest" time="0.011"/>
+  <testcase name="getSideLengthsReflectsSetSideLengths()" classname="TriangleTest" time="0.001"/>
+  <testcase name="getAreaReturnsExpectedValueForThreeFourFiveTriangle()" classname="TriangleTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
