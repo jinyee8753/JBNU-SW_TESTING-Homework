@@ -20,7 +20,7 @@
 
 ## 3. 워크플로우
 
-1. **지시사항 분석** — Opus가 과제3 지시사항(`과제3-지시사항.docx`)을 읽고 요구사항을 정리했다.
+1. **지시사항 분석** — Opus가 과제3 지시사항(`지시사항.md`)을 읽고 요구사항을 정리했다.
 2. **강의 자료 교차검증** — 11, 12, 13주차 강의 자료를 기준으로 mock 단위시험, @Suite 통합시험, CI 구성 요건을 검증했다.
 3. **Hermes 설계 합의** — `RightAngleChecker` 인터페이스와 생성자 주입 방식에 대해 Hermes와 합의했다. 교수님의 `Divider(IMultiplier, ISubstractor)` 패턴을 참고했다.
 4. **Opus 구현** — `Triangle`, `TriangleType`, `RightAngleChecker`, `RealRightAngleChecker`, 6개 테스트 클래스, `build.gradle`, Gradle Wrapper, GitHub Actions 워크플로우를 구현했다.

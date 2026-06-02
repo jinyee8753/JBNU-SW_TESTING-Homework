@@ -13,7 +13,7 @@
 ## 폴더 구조
 
 ```
-과제3-CI/
+과제3/
 ├── src/
 │   ├── main/java/
 │   │   ├── Triangle.java              # 핵심 구현 (classify, getTypeFlags)
@@ -21,18 +21,22 @@
 │   │   ├── RightAngleChecker.java     # 직각 판정 인터페이스
 │   │   └── RealRightAngleChecker.java # RightAngleChecker 실제 구현
 │   └── test/java/
-│       ├── TriangleTest.java                 # 기존 40개 회귀 테스트
+│       ├── TriangleTest.java                  # 기존 40개 회귀 테스트
 │       ├── TriangleGetTypeFlagsUnitTest.java  # getTypeFlags 단위시험 (mock 기반)
 │       ├── RealRightAngleCheckerTest.java     # leaf 클래스 단위시험 (real)
-│       ├── FirstStepOfIntegrationTest.java   # 통합시험 1단계 (mock 사용)
-│       ├── SecondStepOfIntegrationTest.java  # 통합시험 2단계 (real 사용)
-│       └── TriangleIntegrationTest.java      # @Suite 통합시험 진입점
+│       ├── FirstStepOfIntegrationTest.java    # 통합시험 1단계 (mock 사용)
+│       ├── SecondStepOfIntegrationTest.java   # 통합시험 2단계 (real 사용)
+│       └── TriangleIntegrationTest.java       # @Suite 통합시험 진입점
 ├── ci/
-│   └── gradle.yml                    # CI 구성 참조본
-├── gradle/wrapper/
+│   └── gradle.yml                    # CI 워크플로 참조본 (실제 활성본은 저장소 루트 .github/workflows/gradle.yml)
+├── gradle/wrapper/                   # Gradle Wrapper
 ├── build.gradle
 ├── settings.gradle
 ├── gradlew / gradlew.bat
+├── .gitignore
+├── 지시사항.md                       # 과제3 지시사항
+├── README.md
+├── ai_interaction_log.md            # AI agent 활용 기록
 ├── evidence/                         # 빌드·테스트 결과 증빙
 └── report/                           # 제출 보고서
 ```
